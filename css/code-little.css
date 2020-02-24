@@ -1,0 +1,11 @@
+body{
+	/* 多种字体使用逗号分隔 */
+	font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-default{
+	/* 设置没有border */
+	border: none;
+	/* 设置导航栏阴影 */
+	box-shadow: 1px 1px 10px 1px #b9cecb;
+}
