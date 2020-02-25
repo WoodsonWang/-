@@ -1,6 +1,13 @@
 body{
 	/* 多种字体使用逗号分隔 */
 	font-family: "Times New Roman", Times, serif;
+	background-color: #f0f0f0;
+}
+ul{
+	padding: 0px;
+}
+hr{
+	margin: 0px;
 }
 
 .navbar-default{
@@ -8,4 +15,42 @@ body{
 	border: none;
 	/* 设置导航栏阴影 */
 	box-shadow: 1px 1px 10px 1px #b9cecb;
+}
+
+.row{
+	/* 主页两边宽度 */
+	margin: 0px 10% ;
+}
+.media{
+	padding: 5px;
+	background-color: white;
+}
+
+.list-image{
+	    height: 150px;
+	    width: 200px;
+	    margin: 8px;
+}
+
+.social-img{
+	    width: 35px;
+	    height: 35px;
+		margin: auto;	
+}
+
+#social-ul{
+	width: 100%;
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: row;
+	/* justify-content: space-between; */
+}
+
+#personal-label>img{
+	    height: 70px;
+	    width: 70px;
+}
+
+#hot-list > li{
+	margin: 8px 0px;
 }
