@@ -1,7 +1,8 @@
 body{
 	/* 多种字体使用逗号分隔 */
 	font-family: "Times New Roman", Times, serif;
-	background-color: #f0f0f0;
+	/* background-color: #f0f0f0; */
+	
 }
 ul{
 	padding: 0px;
@@ -40,10 +41,18 @@ hr{
 
 #social-ul{
 	width: 100%;
-	margin: 10px 0px;
+	height: 55px;
+	margin-bottom: 0;
 	display: flex;
 	flex-direction: row;
-	/* justify-content: space-between; */
+}
+
+.social-div{
+	height: 55px;
+	padding: 0px;
+}
+.social-div img{
+	/* height: 100%; */
 }
 
 #personal-label>img{

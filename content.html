@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<!-- initial-sacale=1 初始缩放比例
+		,user-scalable=no  用户是否可以手动缩放-->
+	<meta name="viewport" content="width=decive-width,initial-sacale=1,user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/code-little.css" />
+	<script src="./js/jquery-3.4.1.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/myjs.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/out.js"></script>
+	<link rel="stylesheet" href="./css/iconfont/iconfont.css">
+
+</head>
+
+<body>
+	<!-- 导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-down"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<!-- 三条横线图标 -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./index.html">码农天地</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="nav-down">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!-- 导航 -->
+	<style>
+		
+		.span-icon{
+			font-size: 18px;
+			color: #999999;
+			
+		}
+
+		.article-tip{
+			/* 设置float防止高度塌陷 */
+			overflow: hidden;
+		}
+		.article-tip  li{
+			float: left;
+			margin-right: 15px;
+		}
+		.article-line{
+			
+	
+			background-color: rgb(78, 78, 78);
+			height: 1px;
+			margin: 10px;
+		}
+		.comment{
+
+		}
+		.comment p{
+			margin: 0px 10px 0px 40px;
+		}
+		.comment hr{
+			height: 2px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		.like-and-reward{
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+	</style>
+	<!-- 内容 -->
+	<div class="row">
+		<!-- 左边 -->
+		<div class="col-md-8 col-sm-12 ">
+			<div>
+				<h1>希望我们每一个人都遇到爱情，嫁个爱情</h1>
+				<ul class="article-tip">
+					<li>
+						<span class="iconfont span-icon">&#xe74b;</span>
+						<span class="span-icon">2019年05月21日</span>
+					</li>
+					<li>
+						<span class="iconfont span-icon">&#xe602;</span>
+						<span class="span-icon">0</span>
+					</li>
+					<li>
+						<span class="iconfont span-icon">&#xe60a;</span>
+						<span class="span-icon">0</span>
+					</li>
+				</ul>
+			
+
+			</div>
+		
+			<hr class="article-line">
+		<article>
+			<p style="text-align:justify;">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
+			busdam, porro laboriosam repudiandae ducimus mollitia impedit ip
+			sum vel recusandae, quos consequuntur consectetur n
+			ostrum id natus est sapiente velit, voluptatibus odio tempora!</p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, 
+			sint officia. Obcaecati, officia quidem possimus ad magni voluptate,
+			 iste perspiciatis nemo dolore quis consequuntur 
+			aperiam provident, pariatur odio dolorum repellendus!
+			<script>
+				$(function () { $('#reward').popover();
+			
+			
+				$('#rewar').popover();});
+			
+			</script>
+			<div class="like-and-reward">
+				<button type="button" class="btn btn-success">喜欢</button>
+				<a id="reward" tabindex="0" class="btn btn-danger" role="button" data-toggle="popover" 
+				data-trigger="focus" title="您的支持，是我继续努力的动力！" data-html="true" data-content='<img src="./img/wechat.jpg" style="width: 150px;height: 150px;" alt=>'>打赏</a>
+			</div>
+			
+		</article>
+		
+		<footer>
+			<!-- 发表评论框 -->
+			<form>
+				<textarea class="form-control" rows="3" placeholder="留个言吧！"></textarea>
+				
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				
+				
+			
+			
+				<button type="submit" class="btn btn-default" style="background-color: red;">Submit</button>
+			  </form>
+			<!-- 发表评论框 -->
+			留言列表
+			<hr>
+			<div class="comment">
+				<div class="comment-head">
+					<a href="#">
+						<img class="img-circle" src="img/testimg.jpg" alt="..."  style="width: 40px;height:40px;">
+						<span>woodson</span>
+					  </a>
+					  
+					  <span style="float: right;">2019年05月21日</span>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur 
+					adipisicing elit. Deserunt eius molestias iusto id, incidunt odit expedita architecto aliquid nisi tempore velit! Fugiat,
+					 distinctio explicabo? Animi quia maiores quasi nobis nostrum.</p>
+				<hr>
+			</div>
+
+		</footer>
+		
+			
+
+		
+
+
+		</div>
+
+		<!-- 左边 -->
+
+		<!-- 右边 -->
+		<div class="col-md-4 col-sm-12 ">
+			<div class="thumbnail" id="personal-label">
+				<img src="./img/testimg.jpg" alt="..." class="img-circle">
+				<div class="caption">
+					<h3>Thumbnail label</h3>
+					<p>...</p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+							role="button">Button</a></p>
+				</div>
+			</div>
+			<div class="thumbnail social-div">
+				<ul id="social-ul">
+
+					<img src="./img/QQ.png" class="social-img" />
+
+					<img src="./img/csdn.png" class="social-img" />
+
+					<img src="./img/github.png" class="social-img" />
+				</ul>
+			</div>
+
+			<div class="thumbnail ">
+				<h4 style="margin-top: 10px;">热门文章</h4>
+				<hr>
+				<ol id="hot-list">
+
+					<li><a href="index.html">快速学习java</a></li>
+					<li><a href="index.html">快速学习java</a></li>
+					<li><a href="index.html">快速学习java</a></li>
+
+				</ol>
+			</div>
+
+
+		</div>
+		<!-- 右边 -->
+
+	</div>
+
+	<!-- 内容 -->
+
+
+
+
+</body>
+
+</html>
